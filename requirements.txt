@@ -5,3 +5,4 @@ scikit
 seaborn
 tqdm
 streamlit
+tensorflow
