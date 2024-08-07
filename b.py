@@ -118,7 +118,7 @@ if uploaded_file is not None:
 
         if st.checkbox('Train Model'):
             with st.spinner('Training model...'):
-                history = model.fit(x=X, y=y, batch_size=32, epochs=5, validation_split=0.2)
+                history = model.fit(x=X, y=y, batch_size=32, epochs=10, validation_split=0.2)
                 st.success('Model trained successfully')
 
             acc = history.history['accuracy']
