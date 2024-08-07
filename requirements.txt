@@ -6,3 +6,4 @@ seaborn
 tqdm
 streamlit
 tensorflow
+keras
