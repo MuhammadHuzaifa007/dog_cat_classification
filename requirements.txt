@@ -5,5 +5,5 @@ scikit-learn
 seaborn
 tqdm
 streamlit
-tensorflow
-keras
+tensorflow==2.9.1  # Use a specific version
+keras==2.9.0       # Ensure compatibility with TensorFlow
