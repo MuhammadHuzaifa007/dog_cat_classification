@@ -1,1 +1,1 @@
-Dog and cat prediction using CNN
+Cat and Dog prediction using CNN
