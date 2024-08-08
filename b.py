@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from tqdm import tqdm
 from PIL import Image
-from keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.preprocessing.image import load_img, img_to_array
 from keras.models import Model
 from keras.layers import Dense, Conv2D, Dropout, Flatten, MaxPooling2D, Input
 import tensorflow as tf
