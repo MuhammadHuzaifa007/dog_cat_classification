@@ -55,7 +55,7 @@ def read_images_and_labels_from_folder(folder_path, num_images=150):
 # Function to extract features from images
 def extract_features(images):
     features = []
-    for image in tqdm(images, desc="Extracting Features", file=sys.stdout):
+    for image in tqdm(images, desc="Extracting Features"):
         img = image.resize((128, 128), Image.LANCZOS)
         img = img_to_array(img)
         features.append(img)
@@ -63,6 +63,7 @@ def extract_features(images):
     features = np.array(features)
     features = features.reshape(len(features), 128, 128, 3)
     return features
+
 
 # File uploader
 uploaded_file = st.file_uploader("Choose a zip file containing the dataset", type="zip")
